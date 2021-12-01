@@ -2,7 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "@/views/Home";
 import Install from "@/views/Install";
-import Framework from "@/views/Framework";
+import Demo from "@/views/Demo";
 import Tutorial from "@/views/Tutorial";
 import Conclusion from "@/views/Conclusion";
 import Developers from "@/views/Developers";
@@ -22,14 +22,14 @@ const routes = [
         component: Install,
     },
     {
-        path: "/framework",
-        name: "Framework",
-        component: Framework,
-    },
-    {
         path: "/tutorial",
         name: "Tutorial",
         component: Tutorial,
+    },
+    {
+        path: "/demo",
+        name: "Demo",
+        component: Demo,
     },
     {
         path: "/conclusion",
