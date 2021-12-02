@@ -11,8 +11,8 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
+		"axios": "^0.24.0",
 		"cors": "^2.8.5",
-		"express": "^4.17.1",
-		"oracledb": "^5.3.0"
+		"express": "^4.17.1"
 	}
 }
