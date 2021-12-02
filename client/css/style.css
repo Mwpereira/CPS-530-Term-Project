@@ -14,3 +14,11 @@ li {
 	background-image: url('../img/bg.jpg');
 	height: 100vh;
 }
+
+.weather-data {
+	width: 33%;
+}
+
+.box2 {
+	background-color: #ffded5;
+}
