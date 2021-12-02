@@ -3,29 +3,29 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Tutorial - CPS 530 Term Project</title>
-    <link rel="icon" href="../img/favicon.png">
+    <link href="../img/favicon.png" rel="icon">
 
     <!-- Import CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="../css/style.css" rel="stylesheet">
     <!-- Import JS -->
     <script src="../script/index.js"></script>
 </head>
 
 <body>
-    <nav class="navbar box p-3" id="navbar" role="navigation" aria-label="main navigation">
+    <nav aria-label="main navigation" class="navbar box p-3" id="navbar" role="navigation">
         <div class="navbar-brand">
             <figure>
-                <img src="../img/favicon.png" width="50" alt="CPS530" />
+                <img alt="CPS530" src="../img/favicon.png" width="50" />
             </figure>
             <p class="navbar-item has-text-weight-semibold">
                 CPS 530 Project
             </p>
 
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-                data-target="navbarBasicExample">
+            <a aria-expanded="false" aria-label="menu" class="navbar-burger" data-target="navbarBasicExample"
+                role="button">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -33,7 +33,7 @@
         </div>
 
         <div class="navbar-end">
-            <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-menu" id="navbarBasicExample">
                 <div class="navbar-start">
                     <a class="navbar-item" href="../index.html">
                         Home
@@ -82,9 +82,9 @@
                     framework.
                     For this
                     tutorial and our example, we will be using <b>Bulma</b>. Although we will go more in depth with our
-                    guide and examples, feel free to browse through the <a href="https://bulma.io/" target="_blank"
-                        rel="noopener">website</a> and <a href="https://bulma.io/documentation/" target="_blank"
-                        rel="noopener">documentation</a>.</p>
+                    guide and examples, feel free to browse through the <a href="https://bulma.io/" rel="noopener"
+                        target="_blank">website</a> and <a href="https://bulma.io/documentation/" rel="noopener"
+                        target="_blank">documentation</a>.</p>
                 <h2 class="has-text-weight-bold is-size-4 mb-3">2nd. Picking the right IDE for your project</h2>
                 <p class="mb-5">There are many ways that developers will create, edit, and run their code. Generally,
                     they use a
@@ -92,26 +92,49 @@
                     of
                     benefits when coding such as third-party plugins, themes, code analysis, smart suggestions,
                     automation tools and debugging. For creating web applications using HTML, CSS and JavaScript we
-                    would like to recommend you to use either <a href="https://code.visualstudio.com/" target="_blank"
-                        rel="noopener">Visual Studio Code</a> or <a href="https://www.jetbrains.com/webstorm/"
-                        target="_blank" rel="noopener">WebStorm</a> for the greatest development experience.</p>
+                    would like to recommend you to use either <a href="https://code.visualstudio.com/" rel="noopener"
+                        target="_blank">Visual Studio Code</a> or <a href="https://www.jetbrains.com/webstorm/"
+                        rel="noopener" target="_blank">WebStorm</a> for the greatest development experience.</p>
                 <h2 class="has-text-weight-bold is-size-4 mb-3">3rd. Learning and using your CSS Framework</h2>
-                <p class="mb-3">Below we will go over specific steps on how to create a good-looking website:</p>
+                <p class="mb-3">It is quite simple to use a CSS framework. Simply apply an existing class to an HTML
+                    element and it should apply the styling as expected. Below we will go over specific steps on how to
+                    create a good-looking website:</p>
                 <h2 class="has-text-weight-semibold is-size-5 is-underlined mb-3">Typography</h2>
                 <p class="mb-5">
                     Alter text properties such as the size, weight, and others too! Take a look at how Bulma allows you
                     to customize these properties.
                     <br />
-                    <a href="https://bulma.io/documentation/helpers/typography-helpers/" target="_blank"
-                        rel="noopener"><button class="button is-dark mt-3">Check out Bulma's Docs!</button></a>
+                    <a href="https://bulma.io/documentation/helpers/typography-helpers/" rel="noopener" target="_blank">
+                        <button class="button is-dark mt-3">Check out Bulma's Docs!</button>
+                    </a>
+                    <br />
+                    <br />
+                    <b>Examples:</b>
+                    <br />
+                    <span class="is-italic">is-italic</span>
+                    <span class="is-underlined">is-underlined</span>
+                    <span class="has-text-weight-semibold">has-text-weight-semibold</span>
+                    <span class="has-text-weight-bold">has-text-weight-bold</span>
+                    <span class="is-size-5">is-size-5</span>
+                    <span class="is-size-4">is-size-4</span>
                 </p>
                 <h2 class="has-text-weight-semibold is-size-5 is-underlined mb-3">Images</h2>
                 <p class="mb-5">
                     Images should be responsive so that your layout is not destroyed when the viewport's width changes.
                     Bulma shows you how to make your images responsive and how to style them too!
                     <br />
-                    <a href="https://bulma.io/documentation/elements/image/" target="_blank" rel="noopener"><button
-                            class="button is-dark mt-3">Check out Bulma's Docs!</button></a>
+                    <a href="https://bulma.io/documentation/elements/image/" rel="noopener" target="_blank">
+                        <button class="button is-dark mt-3">Check out Bulma's Docs!
+                        </button>
+                    </a>
+                    <br />
+                    <br />
+                    <b>Example:</b>
+                    <br />
+                <p>Using 'is-rounded' </p>
+                <figure class="image is-128x128">
+                    <br /><img alt="Car" class="is-rounded" src="../img/genesis-coupe.jpg" />
+                </figure>
                 </p>
                 <h2 class="has-text-weight-semibold is-size-5 is-underlined mb-3">Buttons</h2>
                 <p class="mb-5">
@@ -119,8 +142,19 @@
                     and interactive on your page. Have an attractive button with a hover effect too! Check out how Bulma
                     allows users to do this on their docs.
                     <br />
-                    <a href="https://bulma.io/documentation/elements/button/" target="_blank" rel="noopener"><button
-                            class="button is-dark mt-3">Check out Bulma's Docs!</button></a>
+                    <a href="https://bulma.io/documentation/elements/button/" rel="noopener" target="_blank">
+                        <button class="button is-dark my-3">Check out Bulma's Docs!
+                        </button>
+                    </a>
+                    <br />
+                    <br />
+                    <b>Examples:</b>
+                    <br />
+                    <br />
+                    <button class="button is-primary mr-1">is-primary</button>
+                    <button class="button is-info mx-1">is-info</button>
+                    <button class="button is-danger mx-1">is-danger</button>
+                    <button class="button is-warning mx-1">is-warning</button>
                 </p>
             </section>
         </div>
