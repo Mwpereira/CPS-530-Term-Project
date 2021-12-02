@@ -1,132 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - CPS 530 Term Project</title>
 
-    <!-- Import CSS -->
-    <link rel="stylesheet" href="./css/style.css">
-
+  <!-- Import CSS -->
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <nav class="navbar box p-3" id="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <p class="navbar-item has-text-weight-semibold">
-            CPS 530 Project
-          </p>
-    
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
+  <nav class="navbar box p-3" id="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <p class="navbar-item has-text-weight-semibold">
+        CPS 530 Project
+      </p>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-end">
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="/">
+            Home
           </a>
-        </div>
-    
-        <div class="navbar-end">
-          <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-              <a class="navbar-item" @click="this.$router.push('/')">
-                Home
+
+          <a class="navbar-item" href="./views/install.html">
+            Install
+          </a>
+
+          <a class="navbar-item" href="./views/tutorial.html">
+            Tutorial
+          </a>
+
+          <a class="navbar-item" href="./views/demo.html">
+            Demo
+          </a>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Developers
+            </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="./views/conclusion.html">
+                Conclusion
               </a>
-    
-              <a class="navbar-item" @click="this.$router.push('/install')">
-                Install
+              <a class="navbar-item" href="./views/developers.html">
+                Team
               </a>
-    
-              <a class="navbar-item" @click="this.$router.push('/tutorial')">
-                Tutorial
-              </a>
-    
-              <a class="navbar-item">
-                Demo
-              </a>
-    
-              <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link">
-                  Developers
-                </a>
-    
-                <div class="navbar-dropdown">
-                  <a class="navbar-item" @click="this.$router.push('/conclusion')">
-                    Conclusion
-                  </a>
-                  <a class="navbar-item" @click="this.$router.push('/developers')">
-                    Team
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </div>
-      </nav>
+      </div>
+    </div>
+  </nav>
 
-    <h1 class="title has-text-centered mt-5">Project Summary</h1>
+  <h1 class="title has-text-centered mt-5">Project Summary</h1>
 
-    <section class="section box">
-      <h2 class="is-size-4 mb-5"><span class="has-text-weight-semibold">Frontend Framework:</span> Bulma </h2>
-      <h3 class="has-text-weight-semibold">Popularity</h3>
-      <section class="content">
-        <ul>
-          <li>Bulma is a fairly popular project on Github with over 35k stars.</li>
-        </ul>
-      </section>
-      <h3 class="has-text-weight-semibold">Advantages</h3>
-      <section class="content">
-        <ul>
-          <li>Simple to use.</li>
-          <li>Easily customizable.</li>
-          <li>Built-in responsiveness.</li>
-          <li>Open source & community driven.</li>
-          <li>Lightweight package.</li>
-        </ul>
-      </section>
-      <h3 class="has-text-weight-semibold">Disadvantages</h3>
-      <section class="content">
-        <ul>
-          <li>Still in early stages of development in comparison to older CSS frameworks.</li>
-          <li>Is not as popular as Bootstrap or MaterialUI.</li>
-        </ul>
-      </section>
-      <h3 class="has-text-weight-semibold">Who uses Bulma and for what type of websites?</h3>
-      <section class="content">
-        <ul>
-          <li>Still in early stages of development in comparison to older CSS frameworks.</li>
-        </ul>
-      </section>
+  <section class="section box">
+    <h2 class="is-size-4 mb-5"><span class="has-text-weight-semibold">Frontend Framework:</span> Bulma </h2>
+    <h3 class="has-text-weight-semibold">Popularity</h3>
+    <section class="content">
+      <ul>
+        <li>Bulma is a fairly popular project on Github with over 35k stars.</li>
+      </ul>
     </section>
-
-    <section  class="section box">
-      <h2 class="is-size-4 mb-5"><span class="has-text-weight-semibold">Backend Framework:</span> Node.js</h2>
-      <h3 class="has-text-weight-semibold">Popularity</h3>
-      <section class="content">
-        <ul>
-          <li>Still in early stages of development in comparison to older CSS frameworks.</li>
-          <li>Is not as popular as Bootstrap or MaterialUI.</li>
-        </ul>
-      </section>
-      <h3 class="has-text-weight-semibold">Advantages</h3>
-      <section class="content">
-        <ul>
-          <li>Still in early stages of development in comparison to older CSS frameworks.</li>
-          <li>Is not as popular as Bootstrap or MaterialUI.</li>
-        </ul>
-      </section>
-      <h3 class="has-text-weight-semibold">Disadvantages</h3>
-      <section class="content">
-        <ul>
-          <li>Still in early stages of development in comparison to older CSS frameworks.</li>
-          <li>Is not as popular as Bootstrap or MaterialUI.</li>
-        </ul>
-      </section>
-      <h3 class="has-text-weight-semibold">Who uses Node.js and for what type of websites?</h3>
-      <section class="content">
-        <ul>
-          <li>Still in early stages of development in comparison to older CSS frameworks.</li>
-          <li>Is not as popular as Bootstrap or MaterialUI.</li>
-        </ul>
-      </section>
+    <h3 class="has-text-weight-semibold">Advantages</h3>
+    <section class="content">
+      <ul>
+        <li>Simple to use.</li>
+        <li>Easily customizable.</li>
+        <li>Built-in responsiveness.</li>
+        <li>Open source & community driven.</li>
+        <li>Lightweight package.</li>
+      </ul>
     </section>
+    <h3 class="has-text-weight-semibold">Disadvantages</h3>
+    <section class="content">
+      <ul>
+        <li>Still in early stages of development in comparison to older CSS frameworks.</li>
+        <li>Is not as popular as Bootstrap or MaterialUI.</li>
+      </ul>
+    </section>
+    <h3 class="has-text-weight-semibold">Who uses Bulma and for what type of websites?</h3>
+    <section class="content">
+      <ul>
+        <li>Still in early stages of development in comparison to older CSS frameworks.</li>
+      </ul>
+    </section>
+  </section>
+
+  <section class="section box">
+    <h2 class="is-size-4 mb-5"><span class="has-text-weight-semibold">Backend Framework:</span> Node.js</h2>
+    <h3 class="has-text-weight-semibold">Popularity</h3>
+    <section class="content">
+      <ul>
+        <li>Still in early stages of development in comparison to older CSS frameworks.</li>
+        <li>Is not as popular as Bootstrap or MaterialUI.</li>
+      </ul>
+    </section>
+    <h3 class="has-text-weight-semibold">Advantages</h3>
+    <section class="content">
+      <ul>
+        <li>Still in early stages of development in comparison to older CSS frameworks.</li>
+        <li>Is not as popular as Bootstrap or MaterialUI.</li>
+      </ul>
+    </section>
+    <h3 class="has-text-weight-semibold">Disadvantages</h3>
+    <section class="content">
+      <ul>
+        <li>Still in early stages of development in comparison to older CSS frameworks.</li>
+        <li>Is not as popular as Bootstrap or MaterialUI.</li>
+      </ul>
+    </section>
+    <h3 class="has-text-weight-semibold">Who uses Node.js and for what type of websites?</h3>
+    <section class="content">
+      <ul>
+        <li>Still in early stages of development in comparison to older CSS frameworks.</li>
+        <li>Is not as popular as Bootstrap or MaterialUI.</li>
+      </ul>
+    </section>
+  </section>
 </body>
+
 </html>
