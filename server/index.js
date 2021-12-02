@@ -16,7 +16,8 @@ app.get('/', (req, res) => {
 		)
 		.then((weatherInfo) => {
 			res.send(weatherInfo.data);
-		});
+		})
+		.catch((e) => console.log(e));
 });
 
 app.listen(port, (req, res) => {

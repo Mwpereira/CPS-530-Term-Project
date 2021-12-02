@@ -64,5 +64,21 @@
 		</nav>
 
 		<h1 class="title has-text-centered mt-6">Demo</h1>
+
+		<div class="container">
+			<div class="box">
+				<div id="temp"></div>
+			</div>
+		</div>
+
+		<script>
+			let temp = document.getElementById('temp');
+
+			fetch('http://localhost:3000/').then((res) => {
+				res.json().then((data) => {
+					temp.innerHTML = Math.round(data.main.temp - 273.15) + ' °C';
+				});
+			});
+		</script>
 	</body>
 </html>
