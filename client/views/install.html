@@ -1,76 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Install - CPS 530 Term Project</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Install - CPS 530 Term Project</title>
+		<!-- Import CSS -->
+		<link rel="stylesheet" href="../css/style.css" />
+	</head>
 
-    <!-- Import CSS -->
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+	<body>
+		<nav
+			class="navbar box p-3"
+			id="navbar"
+			role="navigation"
+			aria-label="main navigation"
+		>
+			<div class="navbar-brand">
+				<p class="navbar-item has-text-weight-semibold">CPS 530 Project</p>
 
-<body>
-    <nav class="navbar box p-3" id="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <p class="navbar-item has-text-weight-semibold">
-                CPS 530 Project
-            </p>
+				<a
+					role="button"
+					class="navbar-burger"
+					aria-label="menu"
+					aria-expanded="false"
+					data-target="navbarBasicExample"
+				>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
 
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-                data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
+			<div class="navbar-end">
+				<div id="navbarBasicExample" class="navbar-menu">
+					<div class="navbar-start">
+						<a class="navbar-item" href="../index.html"> Home </a>
 
-        <div class="navbar-end">
-            <div id="navbarBasicExample" class="navbar-menu">
-                <div class="navbar-start">
-                    <a class="navbar-item" href="../index.html">
-                        Home
-                    </a>
+						<a class="navbar-item" href="./install.html"> Install </a>
 
-                    <a class="navbar-item" href="./install.html">
-                        Install
-                    </a>
+						<a class="navbar-item" href="./tutorial.html"> Tutorial </a>
 
-                    <a class="navbar-item" href="./tutorial.html">
-                        Tutorial
-                    </a>
+						<a class="navbar-item" href="./demo.html"> Demo </a>
 
-                    <a class="navbar-item" href="./demo.html">
-                        Demo
-                    </a>
+						<div class="navbar-item has-dropdown is-hoverable">
+							<a class="navbar-link"> Developers </a>
 
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">
-                            Developers
-                        </a>
+							<div class="navbar-dropdown">
+								<a class="navbar-item" href="./conclusion.html"> Conclusion </a>
+								<a class="navbar-item" href="./developers.html"> Team </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
 
-                        <div class="navbar-dropdown">
-                            <a class="navbar-item" href="./conclusion.html">
-                                Conclusion
-                            </a>
-                            <a class="navbar-item" href="./developers.html">
-                                Team
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
+		<h1 class="title has-text-centered">Install</h1>
 
-    <h1 class="title has-text-centered mt-5">Install</h1>
+		<section class="section">
+			<div class="subtitle">How to Install Bulma</div>
 
-    <div class="columns">
-        <div class="column container column is-10">
+			<div class="box">
+				<ol>
+					<li>
+						To use Bulma in your project, simply add the following line of code
+						inside the head of your HTML document that you want to use Bulma in.
+						<br />
 
-        </div>
-    </div>
-</body>
+						<kbd>
+							&lt;link rel="stylesheet"
+							href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+							/&gt;
+						</kbd>
+					</li>
+				</ol>
+			</div>
+		</section>
 
+		<section class="section">
+			<div class="subtitle">How to Install Express.Js</div>
+
+			<div class="box">
+				<ol>
+					<li>
+						First, make a free Heroku account at https://signup.heroku.com/.
+					</li>
+
+					<li>
+						Then, install the Heroku CLI onto your computer by following the
+						instructions at https://devcenter.heroku.com/articles/heroku-cli.
+						Make sure to install Git(Ensure to follow first time steps if you
+						haven't installed Git before) before installing the Heroku CLI if
+						you don't already have it. The link for the Git installation is
+						available on the Heroku CLI installation website
+					</li>
+
+					<li>
+						After installing Heroku and Git, you must install Node.js which you
+						can do at https://nodejs.org/en/download/.
+					</li>
+
+					<li>
+						Now that you have installed Node.js, create a directory to hold your
+						application, and make that your working directory.
+						<br />
+
+						<kbd> $ mkdir myapp <br />$ cd myapp </kbd>
+					</li>
+
+					<li>
+						Use the npm init command to create a package.json file for your
+						application.
+						<br />
+
+						<kbd> $ npm init </kbd>
+					</li>
+
+					<li>
+						This command prompts you for a number of things, such as the name
+						and version of your application. For now, you can simply hit RETURN
+						to accept the defaults.
+					</li>
+
+					<li>
+						Now install Express in the myapp directory and save it in the
+						dependencies list. For example:
+						<br />
+
+						<kbd> $ npm install express --save </kbd>
+					</li>
+
+					<li>
+						Insert the following script to the script section of the
+						package.json file:
+						<br />
+
+						<kbd> "start": "node index.js" </kbd>
+						<br />
+
+						Your package.json file should now look like this:
+						<br />
+						<img src="../img/package-json-file.png" alt="" width="500" />
+					</li>
+
+					<li>
+						Next, write the code for your express server in the index.js file
+						and save. We will take a look at how to write an express server on
+						the "Tutorial" page.
+					</li>
+
+					<li>
+						Enter the commands <kbd>git init</kbd> ,
+						<kbd>git add . && git commit -m "init"</kbd> ,
+						<kbd>heroku create</kbd> , <kbd>git push heroku master</kbd>
+					</li>
+				</ol>
+			</div>
+		</section>
+	</body>
 </html>
