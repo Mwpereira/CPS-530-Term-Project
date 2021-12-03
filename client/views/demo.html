@@ -1,71 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Demo - CPS 530 Term Project</title>
-		<link rel="icon" href="../img/favicon.png" />
 
-		<!-- Import CSS -->
-		<link rel="stylesheet" href="../css/style.css" />
-		<!-- Import JS -->
-		<script src="../script/index.js"></script>
-	</head>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Demo - CPS 530 Term Project</title>
+	<link rel="icon" href="../img/favicon.png" />
 
-	<body id="demo-bg">
-		<nav
-			class="navbar box p-3"
-			id="navbar"
-			role="navigation"
-			aria-label="main navigation"
-		>
-			<div class="navbar-brand">
-				<figure>
-					<img src="../img/favicon.png" width="50" alt="CPS530" />
-				</figure>
-				<p class="navbar-item has-text-weight-semibold">CPS 530 Project</p>
+	<!-- Import CSS -->
+	<link rel="stylesheet" href="../css/style.css" />
+	<!-- Import JS -->
+	<script src="../script/index.js"></script>
+</head>
 
-				<a
-					role="button"
-					class="navbar-burger"
-					aria-label="menu"
-					aria-expanded="false"
-					data-target="navbarBasicExample"
-				>
-					<span aria-hidden="true"></span>
-					<span aria-hidden="true"></span>
-					<span aria-hidden="true"></span>
-				</a>
-			</div>
+<body id="demo-bg">
+	<nav class="navbar box p-3" id="navbar" role="navigation" aria-label="main navigation">
+		<div class="navbar-brand">
+			<figure>
+				<img src="../img/favicon.png" width="50" alt="CPS530" />
+			</figure>
+			<p class="navbar-item has-text-weight-semibold">CPS 530 Project</p>
 
-			<div class="navbar-end">
-				<div id="navbarBasicExample" class="navbar-menu">
-					<div class="navbar-start">
-						<a class="navbar-item" href="../index.html"> Home </a>
+			<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+				data-target="navbarBasicExample">
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			</a>
+		</div>
 
-						<a class="navbar-item" href="./install.html"> Install </a>
+		<div class="navbar-end">
+			<div id="navbarBasicExample" class="navbar-menu">
+				<div class="navbar-start">
+					<a class="navbar-item" href="../index.html"> Home </a>
 
-						<a class="navbar-item" href="./tutorial.html"> Tutorial </a>
+					<a class="navbar-item" href="./install.html"> Install </a>
 
-						<a class="navbar-item" href="./demo.html"> Demo </a>
+					<a class="navbar-item" href="./tutorial.html"> Tutorial </a>
 
-						<div class="navbar-item has-dropdown is-hoverable">
-							<a class="navbar-link"> Developers </a>
+					<a class="navbar-item" href="./demo.html"> Demo </a>
 
-							<div class="navbar-dropdown">
-								<a class="navbar-item" href="./conclusion.html"> Conclusion </a>
-								<a class="navbar-item" href="./developers.html"> Team </a>
-							</div>
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link"> Developers </a>
+
+						<div class="navbar-dropdown">
+							<a class="navbar-item" href="./conclusion.html"> Conclusion </a>
+							<a class="navbar-item" href="./developers.html"> Team </a>
 						</div>
 					</div>
 				</div>
 			</div>
-		</nav>
+		</div>
+	</nav>
 
-		<h1 class="title has-text-centered is-size-1 mt-6">Toronto</h1>
+	<h1 class="title has-text-centered is-size-1 mt-6">Toronto</h1>
 
-		<div class="container weather-data">
+	<div class="columns mb-6">
+		<div class="container column is-4">
 			<div class="box has-text-centered">
 				<div id="temp" class="is-size-1 has-text-weight-bold"></div>
 
@@ -84,33 +76,32 @@
 					<div id="weather" class="is-size-5"></div>
 				</div>
 
-				<div
-					class="button mt-5 is-warning has-text-weight-bold"
-					onclick="refreshPage()"
-				>
+				<div class="button mt-5 is-warning has-text-weight-bold" onclick="refreshPage()">
 					Refresh
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<script>
-			let temp = document.getElementById('temp');
-			let humidity = document.getElementById('humidity');
-			let pressure = document.getElementById('pressure');
-			let weather = document.getElementById('weather');
+	<script>
+		let temp = document.getElementById('temp');
+		let humidity = document.getElementById('humidity');
+		let pressure = document.getElementById('pressure');
+		let weather = document.getElementById('weather');
 
-			fetch('https://cps530-final-project-2021.herokuapp.com/').then((res) => {
-				res.json().then((data) => {
-					temp.innerHTML = Math.round(data.main.temp - 273.15) + ' °C';
-					humidity.innerHTML = data.main.humidity + ' %';
-					pressure.innerHTML = data.main.pressure + 'hPa';
-					weather.innerHTML = data.weather[0].description;
-				});
+		fetch('https://cps530-final-project-2021.herokuapp.com/').then((res) => {
+			res.json().then((data) => {
+				temp.innerHTML = Math.round(data.main.temp - 273.15) + ' °C';
+				humidity.innerHTML = data.main.humidity + ' %';
+				pressure.innerHTML = data.main.pressure + 'hPa';
+				weather.innerHTML = data.weather[0].description;
 			});
+		});
 
-			function refreshPage() {
-				location.reload();
-			}
-		</script>
-	</body>
+		function refreshPage() {
+			location.reload();
+		}
+	</script>
+</body>
+
 </html>

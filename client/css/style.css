@@ -1,24 +1,23 @@
 @import 'https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css';
 
-kbd {
-	color: white;
-	background-color: #212529;
+html body {
+    overflow-x: hidden;
 }
 
 li {
-	margin-bottom: 1rem;
-	margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
 }
 
 #demo-bg {
-	background-image: url('../img/bg.jpg');
-	height: 100vh;
+    background-image: url('../img/bg.jpg');
+    height: 100vh;
 }
 
 .weather-data {
-	width: 33%;
+    width: 33%;
 }
 
 .box2 {
-	background-color: #ffded5;
+    background-color: #ffded5;
 }
