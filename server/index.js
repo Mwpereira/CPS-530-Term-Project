@@ -6,7 +6,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 app.use(cors());
 
-const apiKey = 'e76639a2f11fd1a42584ba9908864bda';
+const apiKey = process.env.API_KEY || 'YOUR_API_KEY';
 
 // Get weather info
 app.get('/', (req, res) => {
