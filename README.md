@@ -22,6 +22,6 @@
 <img src="gallery/conclusion.png" width="900">
 <img src="gallery/team.png" width="900">
 
-View images under the ```./static/gallery/``` directory.
+View images under the ```./gallery/``` directory.
 
 <a href="https://cps530-term-project.netlify.app/index.html" rel="noopener" target="_blank">Demo</a>
